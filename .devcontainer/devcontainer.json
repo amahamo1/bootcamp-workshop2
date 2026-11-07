@@ -1,0 +1,14 @@
+{
+  "name": "SoDA Hackathon Starter",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": { "label": "App", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["GitHub.copilot", "GitHub.copilot-chat"]
+    }
+  }
+}

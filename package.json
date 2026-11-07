@@ -1,0 +1,16 @@
+{
+  "name": "soda-hackathon-starter",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tiny-fish/sdk": "^0.11.0",
+    "next": "15.5.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  }
+}
