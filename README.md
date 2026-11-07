@@ -63,7 +63,7 @@ const { run, status, result } = useAgent();
 
 **Tips**
 - Use Search or Fetch first. They're free. Use the Agent only when you need clicks, forms, or multiple pages.
-- Agent runs cost 1 credit per step and stop after `MAX_STEPS` (15) steps. Keep goals short and specific.
+- Agent runs cost 1 credit per step and use the step limit configured for your TinyFish account. Keep goals short and specific.
 - End every agent goal with **"Return JSON"** and name the fields you want.
 
 ---
@@ -99,7 +99,7 @@ When your own UI works, delete `components/TinyFishPlayground.js` and the `<Tiny
 | `app/page.js` | Your home page. **Build your MVP here.** |
 | `components/TinyFishPlayground.js` | Test panel for your key. Delete when you're done with it. |
 | `lib/useTinyFish.js` | Hooks for your components: `useSearch`, `useFetchPage`, `useAgent` |
-| `lib/tinyfish.js` | Server-only TinyFish helpers and the `MAX_STEPS` credit cap |
+| `lib/tinyfish.js` | Server-only TinyFish helpers |
 | `app/api/search` | `GET /api/search?q=...` (free) |
 | `app/api/fetch` | `GET /api/fetch?url=...` (free) |
 | `app/api/agent` | `POST /api/agent` with `{ url, goal }` → `{ runId }` (credits) |

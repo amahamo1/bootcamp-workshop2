@@ -2,8 +2,10 @@
 // The HTML shell that wraps every page.
 import "./globals.css";
 
-// TODO(team): change the title to your app's name
-export const metadata = { title: "SoDA Hackathon Starter" };
+export const metadata = {
+  title: "nearwise | Local Price Finder",
+  description: "Compare verified prices from retailers near you.",
+};
 
 export default function RootLayout({ children }) {
   return (
